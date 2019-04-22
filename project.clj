@@ -1,4 +1,4 @@
-(defproject feedly-clj "0.1.0"
+(defproject feedly-clj "0.1.1-SNAPSHOT"
   :description "Download your feedly feeds as ebook in epub format."
   :url "https://github.com/cassc/feedly-clj"
   :license {:name "Eclipse Public License"
