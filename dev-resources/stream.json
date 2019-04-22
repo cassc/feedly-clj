@@ -1,0 +1,77 @@
+{
+  "alternate": [
+    {
+      "href": "https://www.iplaysoft.com",
+      "type": "text/html"
+    }
+  ],
+  "continuation": "1684d2ae9ea:2d9c7a1:3a104d3b",
+  "direction": "ltr",
+  "id": "feed/http://feed.iplaysoft.com/",
+  "items": [
+    {
+      "alternate": [
+        {
+          "href": "https://www.iplaysoft.com/galaxy-s10-mi9-wallpaper.html",
+          "type": "text/html"
+        }
+      ],
+      "author": "X-Force",
+      "canonicalUrl": "https://www.iplaysoft.com/galaxy-s10-mi9-wallpaper.html",
+      "categories": [
+        {
+          "id": "user/27824f57-9558-4176-b84e-dfe42e8832be/category/编程",
+          "label": "编程"
+        }
+      ],
+      "crawled": 1551126778159,
+      "engagement": 1,
+      "engagementRate": 1.0,
+      "fingerprint": "8995b030",
+      "id": "SMjlyCXhSOEGJTTS0WwiJNlz7Fa19U9JqvvU3Lczp80=_169265c512f:106466:c2ce2e2e",
+      "keywords": [
+        "设计美化",
+        "三星",
+        "合集",
+        "图片",
+        "壁纸",
+        "小米",
+        "手机",
+        "桌面",
+        "照片",
+        "素材",
+        "美化",
+        "艺术",
+        "设计"
+      ],
+      "origin": {
+        "htmlUrl": "https://www.iplaysoft.com",
+        "streamId": "feed/http://feed.iplaysoft.com/",
+        "title": "异次元软件世界"
+      },
+      "originId": "https://www.iplaysoft.com/?p=4642",
+      "published": 1551116959000,
+      "summary": {
+        "content": "<p align=\"center\"><a href=\"https://www.iplaysoft.com/galaxy-s10-mi9-wallpaper.html\"><img border=\"0\" src=\"https://img.iplaysoft.com/wp-content/uploads/2019/galaxy-s10-mi9-wallpapers/s10_wallpaper_banner.jpg\"></a></p><p>最近小米和三星都发布了他们的最新旗舰手机「<a rel=\"noopener noreferrer\" href=\"https://www.iplaysoft.com/go/mi\" target=\"_blank\">小米 9</a>」以及「<a rel=\"noopener noreferrer\" href=\"https://www.iplaysoft.com/go/samsung\" target=\"_blank\">Galaxy S10</a>」，米 9 拥有着极高的性价比，而 S10 则搭载了新一代挖孔屏以及顶级的拍照能力，很是惊艳。</p>\n<p>尽管并不是所有人都有换<a rel=\"noopener noreferrer\" href=\"https://www.iplaysoft.com/tag/手机\" target=\"_blank\">手机</a>的打算，但是新的<a rel=\"noopener noreferrer\" href=\"https://www.iplaysoft.com/tag/壁纸\" target=\"_blank\">壁纸</a>我们还是可以拿来用一下的。这次再给大家带来<strong>小米 9 全套壁纸</strong> + <strong>三星 Galaxy S10 的全套高清自带内置壁纸</strong>打包下载，大家可以挑选一些好看的应用到自己的<a rel=\"noopener noreferrer\" href=\"https://www.iplaysoft.com/go/shouji\" target=\"_blank\">手机</a>上。提前尝尝鲜，或偶尔换换<a rel=\"noopener noreferrer\" href=\"https://www.iplaysoft.com/tag/桌面\" target=\"_blank\">桌面</a>风格也不错……</p>\n<p>[ <a href=\"https://www.iplaysoft.com/galaxy-s10-mi9-wallpaper.html\">马上前往围观....</a> ]</p><hr>异次元还有这些值得一看：<br><ul><li><a rel=\"bookmark\" href=\"https://www.iplaysoft.com/galaxy-note8-s8-wallpapers.html\"><i></i>三星旗舰 Galaxy Note 8 与 S8 手机全套自带内置壁纸打包下载 (共30张)</a></li><li><a rel=\"bookmark\" href=\"https://www.iplaysoft.com/google-pixel-wallpapers.html\"><i></i>谷歌 Google Pixel 3 手机系列高清全套自带壁纸打包下载 (动态/静态)</a></li><li><a rel=\"bookmark\" href=\"https://www.iplaysoft.com/simple-colorful-wallpapers.html\"><i></i>收集最适合做桌面的简约手机壁纸下载 - 简洁清爽纯净而又色彩斑斓</a></li><li><a rel=\"bookmark\" href=\"https://www.iplaysoft.com/unsplash.html\"><i></i>Unsplash - 优美免费无版权高清图片壁纸设计素材资源网站 + 客户端下载</a></li></ul><hr><p><a href=\"https://www.iplaysoft.com/go/store\" title=\"异次元正版数字商城\" target=\"_blank\">异次元正版数字商城</a>  |  <a href=\"https://www.iplaysoft.com\" title=\"异次元软件世界\" target=\"_blank\">异次元首页</a>  |  <a href=\"https://www.ipcfun.com\" title=\"iPc.me\" target=\"_blank\">iPcFun</a>  |  <a href=\"https://weibo.com/xforce\" title=\"新浪微博\" target=\"_blank\">新浪微博</a>  |  <a href=\"https://www.iplaysoft.com/tag/store\" title=\"软件精选推荐\" target=\"_blank\">软件精选</a></p>",
+        "direction": "ltr"
+      },
+      "tags": [
+        {
+          "id": "user/27824f57-9558-4176-b84e-dfe42e8832be/tag/global.read",
+          "label": ""
+        }
+      ],
+      "title": "[来自异次元] 三星旗舰 Galaxy S10 手机全套自带高清壁纸 + 小米 9 内置壁纸打包下载",
+      "unread": false,
+      "visual": {
+        "contentType": "image/jpeg",
+        "height": 475,
+        "processor": "feedly-nikon-v3.1",
+        "url": "https://img.iplaysoft.com/wp-content/uploads/2019/galaxy-s10-mi9-wallpapers/samsung_galaxy_s10.jpg",
+        "width": 680
+      }
+    }    
+  ],
+  "title": "异次元软件世界",
+  "updated": 1551126778159
+}

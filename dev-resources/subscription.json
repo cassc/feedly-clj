@@ -1,0 +1,25 @@
+[
+ {
+  "categories": [
+                 {
+                  "id": "user/27824f57-9558-4176-b84e-dfe42e8832be/category/Slashdot",
+                  "label": "Slashdot"
+                  }
+                 ],
+  "contentType": "article",
+  "coverColor": "006666",
+  "coverUrl": "https://storage.googleapis.com/site-assets/7kZ9jBYy0jNWfThTWbMvXoOEh6EzrtgZCDjMlaPKIXQ_cover-15b910f7f82",
+  "iconUrl": "https://storage.googleapis.com/site-assets/7kZ9jBYy0jNWfThTWbMvXoOEh6EzrtgZCDjMlaPKIXQ_icon-15b910f7f82",
+  "id": "feed/http://rss.slashdot.org/Slashdot/slashdotMain",
+  "partial": false,
+  "subscribers": 1829,
+  "title": "Slashdot",
+  "topics": [
+             "tech"
+             ],
+  "updated": 1551251357387,
+  "velocity": 138.0,
+  "visualUrl": "https://storage.googleapis.com/site-assets/7kZ9jBYy0jNWfThTWbMvXoOEh6EzrtgZCDjMlaPKIXQ_visual-15b910f7f82",
+  "website": "https://slashdot.org/"
+  }
+ ]

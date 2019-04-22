@@ -1,0 +1,8 @@
+{:userid              "YOUR-USERID"
+ :access-token        "YOUR-FEEDLY-ACCESS-TOKEN" 
+ :db                  "feedly.db"
+ :log-level           :info
+ :log-file            "feedly.log"
+ :img-connect-options {:connect-timeout 5}
+ :max-image-size      100 ;; reduce images to this size(kb)
+ }
