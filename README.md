@@ -14,7 +14,7 @@ Download your Feedly articles and convert to epub.
 
 * Edit `config-fd.edn` and fill in your Feedly client-id and access-token: 
 
-```
+```clojure
 :userid              "YOUR-USERID"
 :access-token        "YOUR-FEEDLY-ACCESS-TOKEN"
 ```
@@ -32,6 +32,14 @@ lein run
 ```bash
 java -jar feedly-VERSION.jar
 ``` 
+
+## Customization
+
+To reduce the generated ebook file size, you can resize images to smaller. Max image file size (in kb) allowed can be set in `config-fd.edn` by editing the following line:
+
+``` clojure
+:max-image-size      100
+```
 
 ## License
 
