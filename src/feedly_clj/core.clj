@@ -148,9 +148,10 @@
                  x-article)]
     (t/info "Adding" (count x-article) "articles from" title)
     (when-not (s/blank? content)
-      (let [out (io/file "rss/" (str (subs title 0 (min 8 (count title))) ".html"))]
+      (let [out (io/file "rss/" (str (subs title 0 (min 8 (count title))) ".html"))
+            style "<style>img{width: 100%;}</style>"]
         (spit out
-              (format "<html><body>%s</body></html>" content))))))
+              (format "<html><body>%s %s</body></html>" style content))))))
 
 (defn assert-tools! []
   (and (= "linux" (s/lower-case (System/getProperty "os.name")))
