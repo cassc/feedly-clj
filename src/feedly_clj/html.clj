@@ -88,11 +88,12 @@
 
 (defn transform-img-as-local [html-frag]
   (let [dl-queue (atom [])
-        out (->> (parse-fragment html-frag)
-                 (mapv as-hickory)
-                 (mapv (partial convert-img-link dl-queue))
-                 (mapv hickory-to-html)
-                 (s/join ""))]
+        out (some->> html-frag
+                     parse-fragment
+                     (mapv as-hickory)
+                     (mapv (partial convert-img-link dl-queue))
+                     (mapv hickory-to-html)
+                     (s/join ""))]
     (start-downloader @dl-queue)
     out))
 

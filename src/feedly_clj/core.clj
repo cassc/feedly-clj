@@ -96,6 +96,8 @@
   (let [content-c (:content content)
         content-s (:content summary)
         body (html/transform-img-as-local (or content-c content-s))]
+    (when (s/blank? body)
+      (t/warn "No html output for" article))
     (if content-c
       (assoc-in article [:content :content] body)
       (assoc-in article [:summary :content] body))))
