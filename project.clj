@@ -16,5 +16,7 @@
                  [org.xerial/sqlite-jdbc "3.7.2"] ; sqlite
                  [clj-time "0.15.0"]
                  [net.glxn.qrgen/javase "2.0"] ;; qrcode
-                 [cassc/clj-props "0.1.2"]]
+                 [cassc/clj-props "0.1.2"]
+                 [com.aliyun.oss/aliyun-sdk-oss "3.3.0"]
+                 ]
   :main feedly-clj.core)

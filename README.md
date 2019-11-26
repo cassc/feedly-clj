@@ -41,6 +41,25 @@ To reduce the generated ebook file size, you can resize images to smaller. Max i
 :max-image-size      100
 ```
 
+## Complete sample configuration
+
+```clojure
+{:userid              "YOUR-USERID"
+ :access-token        "YOUR-FEEDLY-ACCESS-TOKEN" 
+ :db                  "feedly.db"
+ :log-level           :info
+ :log-file            "feedly.log"
+ :img-connect-options {:connect-timeout 5}
+ :max-image-size      100 ;; reduce images to this size(kb)
+ 
+ ;; :aliyun-oss nil ;; set to nil if you don't wish to auto upload to Aliyun OSS
+ :aliyun-oss          {:endpoint          "your-oss-end-point-url"
+                       :bucket-name       "your-bucket-name"
+                       :access-key-id     "oss-access-key"
+                       :access-key-secret "oss-access-serect"}
+ }
+```
+
 ## License
 
 Distributed under the Eclipse Public License either version 1.0 or (at

@@ -5,6 +5,7 @@
    [feedly-clj.config :refer [props]]
    [feedly-clj.utils :as utils]
    [feedly-clj.html :as html]
+   [feedly-clj.oss :as oss]
    
    [sparrows.http :as http :refer [async-request]]
    [sparrows.cypher :refer [form-encode base64-encode]]
@@ -61,6 +62,7 @@
   (let [url "https://cloud.feedly.com/v3/subscriptions"
         request {:url url
                  :method :get
+                 :timeout 10000
                  :headers {"Authorization" (props :access-token)}}
         {:keys [body status error] :as resp} @(async-request request)]
     (if (= 200 status)
@@ -181,7 +183,8 @@
       (let [now (time/long->datetime-string (time/now-in-millis) {:pattern "yyMMddHHmm" :offset "+8"})
             tmp-in (str now ".html")
             epub-out (str now ".epub")]
-        (t/info (apply sh "pandoc" "--toc" "--toc-depth=2" "-s" "-r" "html" "-o" epub-out x-in-html)))
+        (t/info (apply sh "pandoc" "--toc" "--toc-depth=2" "-s" "-r" "html" "-o" epub-out x-in-html))
+        epub-out)
       (t/error "No content to create book, quit."))))
 
 (defn- get-prev-push-time []
@@ -191,6 +194,7 @@
       (- (time/start-of-day) (* 3600 1000 24 4)))))
 
 (defn- set-prev-push-time [ts]
+  (t/info "change last-push time from" (get-prev-push-time) "to" ts)
   (spit "last-push.txt" (str ts)))
 
 (defn make-book-and-set-time []
@@ -200,7 +204,8 @@
         today (time/long->date-string (System/currentTimeMillis) {:pattern "yyMMdd" :offset "+8"})]
     (when (and book (.exists (io/file book)) (> (.length (io/file book)) 1000))
       ;;(io/copy (io/file book) (io/file (props :mobi-out-root) (str today book-ext)))
-      (set-prev-push-time now))))
+      (set-prev-push-time now)
+      (io/file book))))
 
 (defonce push-time-store (atom 0))
 
@@ -225,8 +230,10 @@
     (init-db!))
   (try
     (load-all-feeds!)
-    (make-book-and-set-time)
-    (catch Exception e
+    (when-let [f-book (make-book-and-set-time)]
+      (oss/upload f-book))
+    (catch Throwable e
       (t/error "Load and push error")
       (t/error e))))
+
 
