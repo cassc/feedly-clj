@@ -231,7 +231,8 @@
   (try
     (load-all-feeds!)
     (when-let [f-book (make-book-and-set-time)]
-      (oss/upload f-book))
+      (when (props [:aliyun-oss :endpoint] {:default nil})
+        (oss/upload f-book)))
     (catch Throwable e
       (t/error "Load and push error")
       (t/error e))))
